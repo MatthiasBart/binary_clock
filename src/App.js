@@ -1,22 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import BinaryClock from './BinaryClock';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <BinaryClock/>
+        <h1>BinaryClock illustrated for every Digit</h1>
+        <h3>Done on 10th of March, Matthias Bartholomäus</h3>
       </header>
     </div>
   );
