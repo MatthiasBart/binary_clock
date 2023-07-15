@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BinaryDigit from "./BinaryDigit";
-import UpdateClock from "./UpdateClock";
+import updateClock from "./UpdateClock";
 
 function BinaryClock() {
     const [hTwo, setHTwo] = useState();
@@ -12,7 +12,7 @@ function BinaryClock() {
 
 
     const setClock = () => {
-        let clockArray = UpdateClock()
+        let clockArray = updateClock()
         setHTwo(clockArray[0])
         setHOne(clockArray[1])
         setMTwo(clockArray[2])
@@ -29,8 +29,10 @@ function BinaryClock() {
         <div className="wrapperHorizontal">
             <BinaryDigit digit={hTwo}/>
             <BinaryDigit digit={hOne}/>
+            <h1>:</h1>
             <BinaryDigit digit={mTwo}/>
             <BinaryDigit digit={mOne}/>
+            <h1>:</h1>
             <BinaryDigit digit={sTwo}/>
             <BinaryDigit digit={sOne}/>
         </div>

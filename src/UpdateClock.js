@@ -1,8 +1,8 @@
 function toBinary(n) { 
-    return (n).toString(2);
+    return n.toString(2);
 }
 
-function UpdateClock() 
+function updateClock() 
 {
   var now = new Date(); // current date & time from computer clock
   var hDigitOne = now.getHours()%10;
@@ -22,4 +22,4 @@ function UpdateClock()
   return [hDigitTwoStr, hDigitOneStr, mDigitTwoStr, mDigitOneStr, sDigitTwoStr, sDigitOneStr]
 }
 
-export default UpdateClock;
+export default updateClock;
